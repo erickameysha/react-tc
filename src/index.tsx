@@ -5,9 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <App />,
   document.getElementById('root')
 );
 
@@ -15,3 +13,23 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+let user = [
+    {
+    name: 'Eric',
+    local: {
+        country: "minsk",
+        city: 'lava'
+    }
+},
+    {
+        name: 'Saha',
+        address: 'suha'
+    }
+
+]
+console.log(user[1].name);
+
+
+let b : Array<Number|String>;
+b = [2,3,4,5,"hello"];

@@ -1,14 +1,18 @@
 import React from "react";
+type AccordionPropsType ={
+    titleValue: string;
+}
+function Accordion(props: AccordionPropsType) {
 
-function Accordion() {
     return <div>
-        <AccordionTitle/>
+
+        <AccordionTitle title={props.titleValue}/>
         <AccordionBody/>
 
     </div>
 }
 
-function AccordionBody() {
+function AccordionBody(prop: any) {
     return <ul>
         <li>1</li>
         <li>2</li>
@@ -16,9 +20,12 @@ function AccordionBody() {
     </ul>
 
 }
+type AccordionTitlePropsType = {
+    title: string;
+}
+function AccordionTitle(props: AccordionTitlePropsType) {
 
-function AccordionTitle() {
-    return <h3>Меню</h3>
+    return <h3>--{props.title}--</h3>
 
 }
 
